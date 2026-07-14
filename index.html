@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cognitive Biases in Recommender Systems - RecSys 2026</title>
+
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      max-width: 960px;
+      margin: 50px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+      color: #222;
+      background-color: #ffffff;
+    }
+
+    h1 {
+      color: #7a0019;
+      font-size: 2.4em;
+      margin-bottom: 5px;
+      line-height: 1.2;
+    }
+
+    .venue {
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    .abstract-box {
+      background: #f5f7fa;
+      border-left: 5px solid #003366;
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 4px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: #003366;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .links a:hover {
+      background: #0055aa;
+    }
+
+    /* Organizers grid */
+    .organizers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .organizer-card {
+      text-align: center;
+    }
+
+    .organizer-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #f5f7fa;
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+
+    .organizer-card img:hover {
+      transform: scale(1.05);
+    }
+
+    .organizer-card a {
+      display: block;
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05em;
+    }
+
+    .organizer-card a:hover {
+      text-decoration: underline;
+    }
+
+    .affiliation {
+      font-size: 0.9em;
+      color: #666;
+      line-height: 1.3;
+      margin-top: 5px;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 0.9em;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Cognitive Biases in Recommender Systems</h1>
+
+    <div class="venue">
+      Tutorial at <strong>RecSys 2026</strong>,
+      Minneapolis, United States — September 28, 2026
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Abstract</h2>
+
+      <div class="abstract-box">
+        <p>
+          Extensive research in psychology and sociology has revealed a
+          plethora of cognitive biases that describe systematic deviations
+          from rationality and objectivity in humans' cognitive processes and
+          judgment, or collective prejudices of a society that favor one
+          group's values, norms, and traditions over others. Examples such as
+          confirmation bias, conformity bias, or cultural homophily are
+          particularly relevant in the context of recommender systems.
+
+          These biases are reflected in user-generated data, such as ratings
+          or tags, and, as a consequence, are embedded in user models that
+          drive recommendation algorithms. As a result, recommender systems
+          may reproduce or amplify such biases, leading to undesired outcomes
+          such as stereotypical recommendations, reduced diversity, or unfair
+          exposure. At the same time, cognitive biases shape how users
+          perceive, interact with, and provide feedback to recommender
+          systems, thereby influencing feedback loops and long-term system
+          dynamics.
+
+          In this multidisciplinary tutorial, we bridge insights from
+          psychology and computer science to examine cognitive biases that
+          are particularly relevant in the context of recommender systems.
+          We introduce these biases grounded in empirical findings and engage
+          participants through interactive exercises that allow them to
+          experience their effects firsthand. We then discuss how they
+          manifest across the recommender system pipeline and outline
+          strategies to mitigate negative effects, as well as opportunities
+          to leverage biases for improved user engagement.
+
+          Finally, we integrate a hands-on component in which participants
+          will be able to: (1) design psychology-informed user choice models
+          based on the presented cognitive biases; (2) integrate them into a
+          provided feedback-loop simulation setup with established
+          recommendation algorithms; and (3) observe how different biases
+          influence the evolution of user profiles, recommendations, and
+          system performance over time.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Organizers</h2>
+
+      <div class="organizers-grid">
+        <div class="organizer-card">
+          <img src="images/schedl.png" alt="Portrait of Markus Schedl">
+
+          <a
+            href="https://www.mschedl.eu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Markus Schedl
+          </a>
+
+          <div class="affiliation">
+            Johannes Kepler University, Linz
+          </div>
+        </div>
+
+        <div class="organizer-card">
+          <img src="images/lesota.jpg" alt="Portrait of Oleg Lesota">
+
+          <a
+            href="https://hcai.at/persons/lesota/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Oleg Lesota
+          </a>
+
+          <div class="affiliation">
+            Johannes Kepler University, Linz
+          </div>
+        </div>
+
+        <div class="organizer-card">
+          <img src="images/tommasel.jpg" alt="Portrait of Antonela Tommasel">
+
+          <a
+            href="https://tommantonela.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Antonela Tommasel
+          </a>
+
+          <div class="affiliation">
+            Johannes Kepler University, Linz
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 COBIS RecSys Tutorial — Hosted on GitHub Pages
+  </footer>
+</body>
+</html>
